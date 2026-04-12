@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Torus';
+    src: url('Torus-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Torus-SemiBold';
+    src: url('Torus-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Torus', sans-serif;
+    font-size: 16px;
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(102, 9, 121, 1) 52%, rgba(130, 0, 121, 1) 100%);
+    color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+h1 {
+    font-family: 'Torus-SemiBold', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.callout {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-family: 'Torus', sans-serif;
+    font-size: 14px;
+}
+
+.topbox {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.topbox h2 {
+    font-family: 'Torus-SemiBold', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+.lbox {
+    display: flex;
+    margin-top: 20px;
+}
+.linkbutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Torus-SemiBold', sans-serif;
+    font-size: 16px;
+}
+
+#versionid {
+    font-family: 'Torus', sans-serif;
+    font-size: 14px;
+    color: #cccccccc;
+}
+
+.tablebox {
+    margin-top: 20px;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit; /* no underline */
+}

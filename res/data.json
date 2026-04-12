@@ -1,0 +1,302 @@
+{
+    "achievement_1": {
+        "source":"Spin Rhythm XD - Track Unlock",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "achievement_2": {
+        "source":"Spin Rhythm XD - Track Unlock",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "achievement_3": {
+        "source":"Spin Rhythm XD - Track Unlock",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "allclear": {
+        "source":"Spin Rhythm XD - Track Result Medal",
+        "state":0,
+        "note":"-"
+    },
+    "b2bcharge_1": {
+        "source":"Megabonk - Chest Opening",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "b2bcharge_2": {
+        "source":"Megabonk - Chest Opening",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "b2bcharge_3": {
+        "source":"Megabonk - Chest Opening",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "b2bcharge_4": {
+        "source":"Megabonk - Chest Opening",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "b2bcharge_blast_1": {
+        "source":"Megabonk - Chest Opening",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "b2bcharge_blast_2": {
+        "source":"Megabonk - Chest Opening",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "b2bcharge_blast_3": {
+        "source":"Megabonk - Chest Opening",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "b2bcharge_blast_4": {
+        "source":"Megabonk - Chest Opening",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "b2bcharge_danger": {
+        "source":"Imagine Dragons - Enemy",
+        "state":0,
+        "note":"I don't even know how I got that isolated sample lol"
+    },
+    "b2b_1": {
+        "source":"osu!lazer - roulette-0",
+        "state":1,
+        "note":"-"
+    },
+    "b2b_2": {
+        "source":"osu!lazer - roulette-2",
+        "state":1,
+        "note":"-"
+    },
+    "b2b_3": {
+        "source":"osu!lazer - roulette-3",
+        "state":1,
+        "note":"-"
+    },
+    "clearbtb": {
+        "source":"tictacto - https://x.com/tictactuh_/status/1837939457074647532",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "clearquad": {
+        "source":"tictacto - https://x.com/tictactuh_/status/1837939457074647532",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "clearspin": {
+        "source":"tictacto - https://x.com/tictactuh_/status/1837939457074647532",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "clutch": {
+        "source":"osu!lazer - spinnerbonus (Argon)",
+        "state":0,
+        "note":"-"
+    },
+    "combobreak": {
+        "source":"osu!lazer - combobreak (Argon)",
+        "state":0,
+        "note":"-"
+    },
+    "countdown1": {
+        "source":"Spin Rhythm XD - Countdown (1)",
+        "state":0,
+        "note":"-"
+    },
+    "countdown2": {
+        "source":"Spin Rhythm XD - Countdown (2)",
+        "state":0,
+        "note":"-"
+    },
+    "countdown3": {
+        "source":"Spin Rhythm XD - Countdown (3)",
+        "state":0,
+        "note":"-"
+    },
+    "countdown4": {
+        "source":"Silence",
+        "state":0,
+        "note":"-"
+    },
+    "countdown5": {
+        "source":"Spin Rhythm XD - Ready Cue",
+        "state":0,
+        "note":"-"
+    },
+    "damage_alert": {
+        "source":"Pixabay - Suspenseful sound effect",
+        "state":0,
+        "note":"-"
+    },
+    "fire": {
+        "source":"Pixabay - Camera Flash",
+        "state":0,
+        "note":"Edited"
+    },
+    "go": {
+        "source":"Spin Rhythm XD - Go Cue",
+        "state":0,
+        "note":"-"
+    },
+    "hit": {
+        "source":"osu!lazer - Keyboard SFX (Deletion)",
+        "state":0,
+        "note":"-"
+    },
+    "ihs": {
+        "source":"osu!lazer - Keyboard SFX (Typing)",
+        "state":0,
+        "note":"-"
+    },
+    "irs": {
+        "source":"osu!lazer - Keyboard SFX (Typing)",
+        "state":0,
+        "note":"-"
+    },
+    "level1": {
+        "source":"you.have.fail (itsmega) - Bejeweled SFX Pack",
+        "state":2,
+        "note":"-"
+    },
+    "level10": {
+        "source":"you.have.fail (itsmega) - Bejeweled SFX Pack",
+        "state":2,
+        "note":"-"
+    },
+    "level100": {
+        "source":"you.have.fail (itsmega) - Bejeweled SFX Pack",
+        "state":2,
+        "note":"-"
+    },
+    "level500": {
+        "source":"you.have.fail (itsmega) - Bejeweled SFX Pack",
+        "state":2,
+        "note":"-"
+    },
+    "losestock": {
+        "source":"osu!lazer - failsound (Argon)",
+        "state":0,
+        "note":"Edited"
+    },
+    "menuclick": {
+        "source":"osu!lazer - default_select",
+        "state":0,
+        "note":"-"
+    },
+    "menuhover": {
+        "source":"osu!lazer - default_hover",
+        "state":0,
+        "note":"-"
+    },
+    "mission_free": {
+        "source":"Cochu U - Mario Kart DS Soundtrack Remake (Grand Prix Start)",
+        "state":0,
+        "note":"-"
+    },
+    "mission_versus": {
+        "source":"Cochu U - Mario Kart DS Soundtrack Remake (Battle Mode Start)",
+        "state":0,
+        "note":"-"
+    },
+    "mission": {
+        "source":"Cochu U - Mario Kart DS Soundtrack Remake (Time Trial Start)",
+        "state":0,
+        "note":"-"
+    },
+    "mmstart": {
+        "source":"osu!lazer - match-found",
+        "state":0,
+        "note":"-"
+    },
+    "no": {
+        "source":"osu!lazer - default-select-disabled",
+        "state":0,
+        "note":"-"
+    },
+    "party_ready": {
+        "source":"osu!lazer - enqueue",
+        "state":0,
+        "note":"-"
+    },
+    "personalbest": {
+        "source":"Beat Saber - Personal Best",
+        "state":0,
+        "note":"-"
+    },
+    "ratinglower": {
+        "source":"you.have.fail (Walpang) - Dubstep SFX Pack",
+        "state":2,
+        "note":"-"
+    },
+    "ratingraise": {
+        "source":"you.have.fail (Walpang) - Dubstep SFX Pack",
+        "state":2,
+        "note":"-"
+    },
+    "rotate": {
+        "source":"osu!lazer - Keyboard SFX (Typing)",
+        "state":0,
+        "note":"-"
+    },
+    "rsg_go": {
+        "source":"osu!lazer - player-ready-all",
+        "state":1,
+        "note":"Edited"
+    },
+    "rsg": {
+        "source":"osu!lazer - player-ready",
+        "state":0,
+        "note":"-"
+    },
+    "sidehit": {
+        "source":"osu!lazer - Keyboard SFX (Deletion)",
+        "state":0,
+        "note":"-"
+    },
+    "social_dm": {
+        "source":"Spin Rhythm XD - Track Unlock",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "social_notify_major": {
+        "source":"Unknown",
+        "state":2,
+        "note":"Originally found on a gimmick account on twitter"
+    },
+    "spinend": {
+        "source":"osu!lazer - Keyboard SFX (Selecting)",
+        "state":0,
+        "note":"Originally found on a gimmick account on twitter"
+    },
+    "topout": {
+        "source":"osu!lazer - failsound (Argon)",
+        "state":0,
+        "note":"-"
+    },
+    "userjoin": {
+        "source":"osu!lazer - user-joined",
+        "state":0,
+        "note":"-"
+    },
+    "userleave": {
+        "source":"osu!lazer - user-left",
+        "state":0,
+        "note":"-"
+    },
+    "victory": {
+        "source":"LCwwww233 - https://x.com/LCwwww233/status/2028065931646456244",
+        "state":0,
+        "note":"Major cuts"
+    },
+    "zenith_start_duo": {
+        "source":"osu!lazer - match-found",
+        "state":0,
+        "note":"-"
+    },
+}
