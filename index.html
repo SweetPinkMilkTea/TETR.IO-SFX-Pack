@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SFX Packinfo</title>
+    <title>Shenzhia's TETR.IO PLUS SFX Pack</title>
     <link rel="stylesheet" href="res/style.css">
-    <script src="res/script.js" defer></script>
+    <script src="res/bar.js" defer></script>
+    <script src="res/content.js" defer></script>
 </head>
 <body>
-    <h1>SFX Packinfo</h1>
+    <h1>Shenzhia's TETR.IO PLUS SFX Pack</h1>
     <p>This page is all about my sound effect pack for TETR.IO PLUS.</p>
     <p>You can download it here, check out which SFX are used, what has been covered already and go to the GitHub Repository to contribute yourself.</p>
     <p class="callout">Warning:<br>This pack is a WIP. Many sounds are not covered and they may be swapped out over the course of creating the pack. Consider contibuting by suggesting SFX to be added or modified.</p>
     <div class="topbox">
         <h2>Download</h2>
-        <span>Download the latest version or visit the repository here:</span>
+        <p>Download the latest version here directly or visit the repository to contribute/view more:</p>
         <div class="lbox">
             <a class="linkbutton" href="">
                 <span>Download latest</span>
@@ -25,17 +26,31 @@
             </a>
         </div>
     </div>
-    <p>Current pack completion:</p>
-    <div class="barcontainer"></div>
-    <!-- TODO: Bar with segments, matching state key in data -->
-    <div class="tablebox">
+    <div class="topbox">
+        <h2>Completion</h2>
+        <p>Current pack completion:</p>
+        <p>Sounds are categorized into 3 categories:</p>
+        <ul>
+            <li><strong>Stable</strong>: These sounds are likely final and won't be changed anymore.</li>
+            <li><strong>Unstable</strong>: These sounds might be changed later.</li>
+            <li><strong>To be replaced</strong>: These sounds are planned to be swapped out.</li>
+        </ul>
+        <div class="barcontainer">
+            <div class="bartextcontainer"></div>
+            <div class="bar" id="progressbar"></div>
+        </div>
+    </div>
+    
+    <div class="topbox">
         <details>
-            <summary>SFX Coverage</summary>
+            <summary>View full SFX Coverage</summary>
             <p>All SFX and their status are displayed here.</p>
-            <div id="contenttable">
+            <p>Click on a SFX's name to preview it.</p>
+            <div id="contenttable" class="contenttable">
                 <!-- Content will be dynamically generated here -->
             </div>
         </details>
     </div>
+    <a class="totop" href="#"><span>⮝</span></a>
 </body>
 </html>

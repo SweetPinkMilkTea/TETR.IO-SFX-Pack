@@ -64,17 +64,17 @@
         "state":0,
         "note":"I don't even know how I got that isolated sample lol"
     },
-    "b2b_1": {
+    "btb_1": {
         "source":"osu!lazer - roulette-0",
         "state":1,
         "note":"-"
     },
-    "b2b_2": {
+    "btb_2": {
         "source":"osu!lazer - roulette-2",
         "state":1,
         "note":"-"
     },
-    "b2b_3": {
+    "btb_3": {
         "source":"osu!lazer - roulette-3",
         "state":1,
         "note":"-"
@@ -272,7 +272,7 @@
     "spinend": {
         "source":"osu!lazer - Keyboard SFX (Selecting)",
         "state":0,
-        "note":"Originally found on a gimmick account on twitter"
+        "note":"-"
     },
     "topout": {
         "source":"osu!lazer - failsound (Argon)",
@@ -298,5 +298,5 @@
         "source":"osu!lazer - match-found",
         "state":0,
         "note":"-"
-    },
+    }
 }
