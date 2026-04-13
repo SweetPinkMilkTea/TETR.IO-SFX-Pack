@@ -7,6 +7,11 @@ async function getLatestRelease() {
         const response = await fetch(`https://api.github.com/repos/${repo}/releases/latest`);
         const data = await response.json();
 
+        // Before continuing, check if API returned an error (e.g., rate limit exceeded)
+        if (response.status !== 200) {
+            throw new Error(`GitHub API error: ${data.message || 'Unknown error'}`);
+        }
+
         // 1. Insert the release name (e.g., "v1.0.2")
         versionElement.innerText = data.tag_name;
 
@@ -23,7 +28,8 @@ async function getLatestRelease() {
 
     } catch (error) {
         console.error("Error fetching release:", error);
-        versionElement.innerText = "Error loading";
+        versionElement.innerText = "---";
+        versionElement.title = "Failed to fetch latest release. Click to view releases on GitHub yourself.";
     }
 }
 
