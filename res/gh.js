@@ -3,6 +3,14 @@ async function getLatestRelease() {
     const versionElement = document.getElementById('versionid');
     const downloadButton = document.querySelector('.linkbutton[href=""]');
 
+    // DEBUG: Interupt the function to not spam GitHub API during development
+    if (window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost") {
+        versionElement.innerText = "N/A";
+        downloadButton.href = `#`;
+        return;
+    }
+
+
     try {
         const response = await fetch(`https://api.github.com/repos/${repo}/releases/latest`);
         const data = await response.json();

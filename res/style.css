@@ -12,6 +12,14 @@
     font-style: normal;
 }
 
+/* Set color variables for easy theming */
+:root {
+    --state0-color: #4bbf6f; 
+    --state1-color: #f0c933; 
+    --state2-color: #e5544f; 
+    --missing-color: rgba(255, 255, 255, 0.16); 
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -35,8 +43,9 @@ h1 {
 }
 
 .callout {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-left: 4px solid white;
+    background-color: rgba(255, 166, 32, 0.1);
+    border-left: 4px solid rgb(255, 166, 32);
+    color: rgb(255, 166, 32);
     padding: 10px 20px;
     margin: 20px 0;
     font-family: 'Torus', sans-serif;
@@ -44,11 +53,10 @@ h1 {
 }
 
 .topbox {
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
     margin: 10px 0;
     border: 1px solid white;
+    border-radius: 9px;
 }
 
 .topbox h2 {
@@ -58,8 +66,9 @@ h1 {
 }
 
 .lbox {
-    display: flex;
+    display: grid;
     margin-top: 20px;
+    grid-template-columns: 60% 40%;
 }
 .linkbutton {
     display: flex;
@@ -69,11 +78,19 @@ h1 {
     flex: 1;
     background: none;
     border: 1px solid white;
+    border-radius: 10px;
     padding: 10px 20px;
     margin-left: 10px;
     cursor: pointer;
     font-family: 'Torus-SemiBold', sans-serif;
     font-size: 16px;
+    transition: background-color 0.3s;
+}
+.linkbutton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.linkbutton:active {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 #versionid {
@@ -106,25 +123,49 @@ h1 {
   overflow: hidden;
 }
 
+.markerlist > li {
+  margin-top: 8px;
+}
+
+.marker {
+  display: inline-flex;
+  align-items: center; /* Centers text vertically */
+  justify-content: center; /* Centers text horizontally */
+  
+  /* Adjust these to control the physical size */
+  padding: 0 12px; 
+  height: 24px;
+  
+  /* Now you can shrink the font independently */
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  border-radius: 999px;
+  color: #020024 !important;
+}
+
 .bar-segment {
   height: 100%;
   transition: width 0.3s ease;
 }
 
-.bar-segment.green {
-  background: #4bbf6f;
+.green {
+  background: var(--state0-color);
 }
 
-.bar-segment.yellow {
-  background: #f0c933;
+.yellow {
+  background: var(--state1-color);
 }
 
-.bar-segment.red {
-  background: #e5544f;
+.red {
+  background: var(--state2-color);
 }
 
-.bar-segment.missing {
-  background: rgba(255, 255, 255, 0.16);
+.marker.missingattr {
+  border: 1px solid var(--missing-color);
+  background: rgb(35, 35, 35);
+  color: #ff716c !important;
 }
 
 a {
@@ -159,14 +200,9 @@ summary {
   color: rgba(255, 255, 255, 0.85);
 }
 
-.contenttable-row.missing {
-  opacity: 0.72;
-  grid-template-columns: 2fr 7fr;
-}
 .contenttable-row.missing .contenttable-status {
   text-align: center;
 }
-
 .contenttable-key,
 .contenttable-key button {
   background: none;
@@ -211,18 +247,14 @@ summary {
 }
 
 .contenttable-status {
-  text-align: right;
+  text-align: center;
 }
 
 .contenttable-empty {
   padding: 16px 0;
   color: rgba(255, 255, 255, 0.8);
 }
-.missingattr {
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
+
 
 @media (max-width: 768px) {
   .contenttable-row {

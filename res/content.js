@@ -59,10 +59,22 @@ function prepareRow(key, item, missing = false) {
     const sourceCell = createCell('span', 'contenttable-source', missing ? '-' : (item.source || '-'));
     const noteCell = createCell('span', 'contenttable-note', missing ? '-' : (item.note || '-'));
     let statusCell;
+    let colorClass = '';
     if (!missing) {
-        statusCell = createCell('span', 'contenttable-status', formatState(item.state));
+        switch (item.state) {
+            case 0:
+                colorClass = 'green';
+                break;
+            case 1:
+                colorClass = 'yellow';
+                break;
+            case 2:
+                colorClass = 'red';
+                break;
+        }
+        statusCell = createCell('span', `contenttable-status marker ${colorClass}`, formatState(item.state));
     } else {
-        statusCell = createCell('span', 'contenttable-status missingattr', 'Missing');
+        statusCell = createCell('span', 'contenttable-status marker missingattr', 'Missing');
     }
 
     row.appendChild(keyCell);
@@ -82,7 +94,7 @@ function formatState(value) {
         case 1:
             return 'Unstable';
         case 2:
-            return 'To be replaced';
+            return 'TBR';
         default:
             return String(value ?? '-');
     }
