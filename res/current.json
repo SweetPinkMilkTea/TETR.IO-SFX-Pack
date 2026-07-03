@@ -291,11 +291,41 @@
     },
     "victory": {
         "source":"LCwwww233 - https://x.com/LCwwww233/status/2028065931646456244",
-        "state":0,
+        "state":1,
         "note":"Major cuts"
     },
     "zenith_start_duo": {
         "source":"osu!lazer - match-found",
+        "state":0,
+        "note":"-"
+    },
+    "b2bcharge_start": {
+        "source":"Rhythm Doctor - OneShot Hold Cue",
+        "state":0,
+        "note":"-"
+    },
+    "boardlock_revive": {
+        "source":"HAYAKO - ANALYS",
+        "state":0,
+        "note":"Cut and Edited"
+    },
+    "counter": {
+        "source":"Pixabay - Sword Clash",
+        "state":0,
+        "note":"-"
+    },
+    "hyperalert": {
+        "source":"Pixabay - Sci-Fi Hitsound",
+        "state":0,
+        "note":"-"
+    },
+    "maintenance": {
+        "source":"osu!lazer - Dialog Pop In",
+        "state":0,
+        "note":"-"
+    },
+    "social_invite": {
+        "source":"SiIvaGunner - Switch User Profile (NTSC Version)",
         "state":0,
         "note":"-"
     }

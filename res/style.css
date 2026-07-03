@@ -17,6 +17,7 @@
     --state0-color: #4bbf6f; 
     --state1-color: #f0c933; 
     --state2-color: #e5544f; 
+  --state3-color: #4b9bff;
     --missing-color: rgba(255, 255, 255, 0.16); 
 }
 
@@ -160,6 +161,10 @@ h1 {
 
 .red {
   background: var(--state2-color);
+}
+
+.blue {
+  background: var(--state3-color);
 }
 
 .marker.missingattr {

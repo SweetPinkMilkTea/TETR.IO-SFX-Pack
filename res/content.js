@@ -71,6 +71,9 @@ function prepareRow(key, item, missing = false) {
             case 2:
                 colorClass = 'red';
                 break;
+            case 3:
+                colorClass = 'blue';
+                break;
         }
         statusCell = createCell('span', `contenttable-status marker ${colorClass}`, formatState(item.state));
     } else {
@@ -95,6 +98,8 @@ function formatState(value) {
             return 'Unstable';
         case 2:
             return 'TBR';
+        case 3:
+            return 'Pending';
         default:
             return String(value ?? '-');
     }
@@ -158,7 +163,16 @@ async function renderContent() {
         if (currentItem) {
             contentRoot.appendChild(prepareRow(key, currentItem, false));
         } else {
-            contentRoot.appendChild(prepareRow(key, {}, true));
+            // If the file exists in the sfx folder but isn't indexed, mark as "pending" in the Full list
+            const url = await findAudioUrl(key);
+            if (url) {
+                // cache the found URL so playback works from the pending row
+                audioCache.set(key, url);
+                const pendingItem = { state: 3, source: '???', note: 'Not indexed yet...' };
+                contentRoot.appendChild(prepareRow(key, pendingItem, false));
+            } else {
+                contentRoot.appendChild(prepareRow(key, {}, true));
+            }
         }
     }
 
