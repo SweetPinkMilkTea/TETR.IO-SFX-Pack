@@ -196,6 +196,11 @@ a {
   border-radius: 4px;
 }
 
+hr {
+  margin: 20px 0;
+  border: 1px dashed white;
+}
+
 summary {
   cursor: pointer;
   font-family: 'Torus-SemiBold', sans-serif;
