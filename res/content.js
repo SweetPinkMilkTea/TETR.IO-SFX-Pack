@@ -2,6 +2,21 @@ const contentRoot = document.getElementById('contenttable');
 const audioCache = new Map();
 const audioPlayer = new Audio();
 
+// Initialize volume from localStorage (stored as 0-100)
+try {
+    const savedVol = localStorage.getItem('sfxpack_volume');
+    if (savedVol !== null) {
+        const parsed = Number(savedVol);
+        if (!Number.isNaN(parsed)) {
+            audioPlayer.volume = Math.max(0, Math.min(100, parsed)) / 100;
+        }
+    }
+} catch (e) {
+    // ignore storage errors (e.g. private mode)
+}
+// Expose global player so other modules can adjust volume
+window.audioPlayer = audioPlayer;
+
 function createCell(tag, className, text) {
     const cell = document.createElement(tag);
     if (className) cell.className = className;

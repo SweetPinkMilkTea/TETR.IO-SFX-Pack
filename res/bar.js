@@ -101,3 +101,17 @@ async function renderProgressBar() {
 }
 
 window.addEventListener('DOMContentLoaded', renderProgressBar);
+
+// Volume bar styling
+
+const slider = document.querySelector('.sliderinput');
+
+const handleInput = (el) => {
+  const min = el.min || 0;
+  const max = el.max || 100;
+  const pct = (el.value - min) / (max - min) * 100;
+  el.style.setProperty('--range-pct', pct + '%');
+};
+
+slider.addEventListener('input', (e) => handleInput(e.target));
+handleInput(slider);

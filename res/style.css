@@ -201,6 +201,17 @@ hr {
   border: 1px dashed white;
 }
 
+.volume-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.volume-control input[type="range"] {
+  width: 80%;
+}
+
 summary {
   cursor: pointer;
   font-family: 'Torus-SemiBold', sans-serif;

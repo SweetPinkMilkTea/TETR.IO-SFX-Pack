@@ -1,0 +1,45 @@
+/* Target Input */
+.sliderinput {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* --- Webkit Browsers --- */
+.sliderinput::-webkit-slider-runnable-track {
+  height: 4px;
+  background: linear-gradient(to right, #ffffff00 var(--range-pct, 0%), #ffffff00 var(--range-pct, 0%));
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sliderinput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: #4972b6;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0);
+  margin-top: -10px;
+}
+
+/* --- Firefox --- */
+.sliderinput::-moz-range-track {
+  height: 4px;
+  background: linear-gradient(to right, #ffffff var(--range-pct, 0%), rgba(87, 134, 191, 0) var(--range-pct, 0%));
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sliderinput::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  background: #ffffff00;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0);
+}

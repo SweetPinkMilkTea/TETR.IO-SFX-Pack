@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shenzhia's TETR.IO PLUS SFX Pack</title>
     <link rel="stylesheet" href="res/style.css">
+    <link rel="stylesheet" href="res/style_range.css">
     <script src="res/bar.js" defer></script>
     <script src="res/content.js" defer></script>
+    <script src="res/volume.js" defer></script>
     <script src="res/gh.js" defer></script>
 </head>
 <body>
@@ -47,7 +49,10 @@
             <hr>
             <p>All SFX and their status are displayed here.</p>
             <p>Click on a SFX's name to preview it.</p>
-            <p class="callout">Sounds are playing at full volume. Adjust your setup accordingly.</p>
+            <p class="callout">Adjust preview volume below. Default is 0%, so increase it at your discretion.</p>
+            <div class="volume-control">
+                <input type="range" id="volume-slider" class="sliderinput" min="0" max="100" value="0">
+            </div>
             <div id="contenttable" class="contenttable">
                 <!-- Content will be dynamically generated here -->
             </div>
@@ -58,7 +63,6 @@
         <details>
             <summary>How to install this pack</summary>
             <hr>
-            <p>To install this pack, follow these steps:</p>
 
             <h2>Ensure TETR.IO PLUS is installed</h5>
             <p>Make sure you have TETR.IO PLUS installed. If you haven't, <span class="linkhighlight"><a href="https://gitlab.com/UniQMG/tetrio-plus/-/releases">download it...</a></span></p>
