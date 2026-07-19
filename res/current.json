@@ -297,7 +297,7 @@
     "zenith_start_duo": {
         "source":"osu!lazer - match-found",
         "state":0,
-        "note":"-"
+        "note":"Edited"
     },
     "b2bcharge_start": {
         "source":"Rhythm Doctor - OneShot Hold Cue",
@@ -327,6 +327,56 @@
     "social_invite": {
         "source":"SiIvaGunner - Switch User Profile (NTSC Version)",
         "state":0,
+        "note":"-"
+    },
+    "boardlock_fail":{
+        "source":"Pixabay - DJ Tape Stop",
+        "state":1,
+        "note":"-"
+    },
+    "ranklower":{
+        "source":"Spin Rhythm XD - Track Fail",
+        "state":1,
+        "note":"-"
+    },
+    "rankraise":{
+        "source":"Spin Rhythm XD - Game start",
+        "state":0,
+        "note":"-"
+    },
+    "zenith_start":{
+        "source":"Spin Rhythm XD - Track start",
+        "state":0,
+        "note":"-"
+    },
+    "b2bcharge_distance_1":{
+        "source":"RYOQUCHA 10k Followers Sample Pack",
+        "state":1,
+        "note":"-"
+    },
+    "b2bcharge_distance_2":{
+        "source":"RYOQUCHA 10k Followers Sample Pack",
+        "state":1,
+        "note":"-"
+    },
+    "b2bcharge_distance_3":{
+        "source":"RYOQUCHA 10k Followers Sample Pack",
+        "state":1,
+        "note":"-"
+    },
+    "elim":{
+        "source":"RYOQUCHA 10k Followers Sample Pack",
+        "state":1,
+        "note":"-"
+    },
+    "boardlock_clear":{
+        "source":"RYOQUCHA 10k Followers Sample Pack + osu!lazer - bss-complete",
+        "state":0,
+        "note":"-"
+    },
+    "boardlock_clink":{
+        "source":"RYOQUCHA 10k Followers Sample Pack + osu!lazer - bss-stage-1",
+        "state":1,
         "note":"-"
     }
 }
