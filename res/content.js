@@ -110,9 +110,9 @@ function formatState(value) {
         case 0:
             return 'Stable';
         case 1:
-            return 'Unstable';
+            return 'Minor';
         case 2:
-            return 'TBR';
+            return 'Major';
         case 3:
             return 'Pending';
         default:

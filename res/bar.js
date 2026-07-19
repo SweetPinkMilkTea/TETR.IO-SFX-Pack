@@ -4,8 +4,8 @@ const barText = document.querySelector('.bartextcontainer');
 
 const stateConfig = {
   0: { label: 'Stable', className: 'green' },
-  1: { label: 'Unstable', className: 'yellow' },
-  2: { label: 'To be replaced', className: 'red' }
+  1: { label: 'Minor', className: 'yellow' },
+  2: { label: 'Major', className: 'red' }
 };
 
 async function fetchJson(path) {
@@ -94,8 +94,8 @@ async function renderProgressBar() {
     <span>${presentCount}/${totalKeys} present</span>
     <span>
       <strong>Stable</strong>: ${counts[0] || 0} -
-      <strong>Unstable</strong>: ${counts[1] || 0} -
-      <strong>To be replaced</strong>: ${counts[2] || 0}
+      <strong>Minor</strong>: ${counts[1] || 0} -
+      <strong>Major</strong>: ${counts[2] || 0}
     </span>
   `;
 }
