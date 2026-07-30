@@ -41,4 +41,46 @@ async function getLatestRelease() {
     }
 }
 
+function loadDownloadStats() {
+    const statsElement = document.getElementById('download_stats');
+    if (!statsElement) return;
+
+    const saved = localStorage.getItem('sfxpack_last_download');
+    if (!saved) {
+        statsElement.style.display = 'none';
+        return;
+    }
+
+    try {
+        const { version, downloadTime } = JSON.parse(saved);
+        if (!version || !downloadTime) {
+            throw new Error('Invalid download stats');
+        }
+
+        const date = new Date(downloadTime);
+        statsElement.textContent = `You last downloaded ${version} on ${date.toLocaleString()}.`;
+        statsElement.style.display = '';
+    } catch (error) {
+        console.warn('Could not load download stats:', error);
+        statsElement.style.display = 'none';
+    }
+}
+
+function saveDownloadStats() {
+    const versionElement = document.getElementById('versionid');
+    if (!versionElement) return;
+
+    const version = versionElement.innerText.trim();
+    if (!version) return;
+
+    const downloadTime = new Date().toISOString();
+    localStorage.setItem('sfxpack_last_download', JSON.stringify({ version, downloadTime }));
+}
+
+const downloadButton = document.getElementById('dlpack');
+if (downloadButton) {
+    downloadButton.addEventListener('click', saveDownloadStats);
+}
+
+loadDownloadStats();
 getLatestRelease();

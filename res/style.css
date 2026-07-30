@@ -63,7 +63,27 @@ h1 {
     font-size: 14px;
 }
 
+.outer_topbox {
+    border: 1px solid white;
+    border-radius: 9px;
+    background-color: white;
+}
+
+.outer_topbox > .topbox {
+    margin: 0 !important;
+    border: none !important;
+}
+
+.download_stats {
+    color:#000;
+    padding: 5px 10px;
+    font-family: 'Torus', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
 .topbox {
+    background: #000;
     padding: 20px;
     margin: 10px 0;
     border: 1px solid white;
@@ -323,4 +343,74 @@ summary {
 }
 .totop:active {
     background-color: #ffffffff;
+}
+
+.topbox {
+    
+    --grid-hue: 280; /* color of background/lines */
+    --grid-gap: 10px; /* size of the minor squares (line gaps) */
+    --grid-opacity: 0.05; /* opacity of crosses */
+    
+    --grid-border: 16px;
+    
+    --grid-dark: hsl(var(--grid-hue), 20%, 5%);
+    --grid-bg: var(--grid-dark);
+    
+    --grid-minor: hsl(var(--grid-hue) 60% 80% / calc(var(--grid-opacity) * 0.125));
+    --grid-major: hsl(var(--grid-hue) 60% 80% / calc(var(--grid-opacity) * 0.35));
+    --grid-cross: hsl(var(--grid-hue) 60% 80% / var(--grid-opacity));
+    
+    --paper-lines-y: linear-gradient(var(--grid-minor) 0px 1px,transparent 1px var(--grid-gap));
+    --paper-lines-x: linear-gradient(to right, var(--grid-minor) 0px 1px,transparent 1px var(--grid-gap));
+    --paper-lines-y-major: linear-gradient(var(--grid-major) 0px 1px,transparent 1px calc(var(--grid-gap) * 5));
+    --paper-lines-x-major: linear-gradient(to right, var(--grid-major) 0px 1px,transparent 1px calc(var(--grid-gap) * 5));
+    --paper-cross-y: linear-gradient(var(--grid-cross) 0px 1px,transparent 1px calc(var(--grid-gap) * 5));
+    --paper-cross-x: linear-gradient(to right, var(--grid-cross) 0px 1px,transparent 1px calc(var(--grid-gap) * 5));
+    --paper-cross-mask: radial-gradient(circle at center, transparent calc(var(--grid-gap)/2), var(--grid-bg) calc(var(--grid-gap)/2) 100%);
+    
+    --paper-gradient: 
+        var(--paper-lines-y), 
+        var(--paper-lines-x),
+        var(--paper-lines-y-major), 
+        var(--paper-lines-x-major), 
+        var(--paper-cross-mask),
+        var(--paper-cross-y), 
+        var(--paper-cross-x);
+    
+    background-size:
+        var(--grid-gap) var(--grid-gap), 
+        var(--grid-gap) var(--grid-gap), 
+        calc(var(--grid-gap) * 5) calc(var(--grid-gap) * 5),
+        calc(var(--grid-gap) * 5) calc(var(--grid-gap) * 5),
+        calc(var(--grid-gap) * 5) calc(var(--grid-gap) * 5),
+        calc(var(--grid-gap) * 5) calc(var(--grid-gap) * 5),
+        calc(var(--grid-gap) * 5) calc(var(--grid-gap) * 5);
+    
+    background-repeat: 
+        repeat, 
+        repeat, 
+        repeat, 
+        repeat, 
+        repeat,
+        repeat, 
+        repeat;
+    
+    background-position: 
+        var(--grid-border) var(--grid-border),
+        var(--grid-border) var(--grid-border),
+        var(--grid-border) var(--grid-border),
+        var(--grid-border) var(--grid-border),
+        calc(var(--grid-border) - var(--grid-gap) * 2.5) calc(var(--grid-border) - var(--grid-gap) * 2.5),
+        var(--grid-border) var(--grid-border),
+        var(--grid-border) var(--grid-border);
+    
+    background-color: var(--grid-bg);
+    background-image: var(--paper-gradient);
+    
+    box-shadow: inset 0 0 0 var(--grid-border) var(--grid-bg), inset 0 0 0 calc( var(--grid-border) + 1px) var(--grid-cross), inset 0 0 0 calc( var(--grid-border) + 1px) var(--bg2);
+    padding: var(--grid-border);
+    
+    
+    transition: --grid-gap 0.2s ease-in-out;
+    overflow: hidden;
 }
