@@ -150,13 +150,13 @@
         "note":"-"
     },
     "ihs": {
-        "source":"osu!lazer - Keyboard SFX (Typing)",
+        "source":"osu!lazer - key-press-1",
         "state":0,
-        "note":"-"
+        "note":"Edited"
     },
     "irs": {
         "source":"osu!lazer - Keyboard SFX (Typing)",
-        "state":0,
+        "state":1,
         "note":"-"
     },
     "level1": {
@@ -351,17 +351,17 @@
     },
     "b2bcharge_distance_1":{
         "source":"RYOQUCHA 10k Followers Sample Pack",
-        "state":1,
+        "state":0,
         "note":"-"
     },
     "b2bcharge_distance_2":{
         "source":"RYOQUCHA 10k Followers Sample Pack",
-        "state":1,
+        "state":0,
         "note":"-"
     },
     "b2bcharge_distance_3":{
         "source":"RYOQUCHA 10k Followers Sample Pack",
-        "state":1,
+        "state":0,
         "note":"-"
     },
     "elim":{
@@ -378,5 +378,55 @@
         "source":"RYOQUCHA 10k Followers Sample Pack + osu!lazer - bss-stage-1",
         "state":1,
         "note":"-"
+    },
+    "btb_break":{
+        "source":"osu!lazer - time_up",
+        "state":0,
+        "note":"-"
+    },
+    "matchintro":{
+        "source":"Samples from osu!lazer and a RYOQUCHA sample pack",
+        "state":0,
+        "note":"Heavily edited"
+    },
+    "social_open":{
+        "source":"osu!lazer - wave-pop-in",
+        "state":0,
+        "note":""
+    },
+    "social_open_minor":{
+        "source":"osu!lazer - wave-pop-in",
+        "state":0,
+        "note":"Edited"
+    },
+    "social_close":{
+        "source":"osu!lazer - wave-pop-out",
+        "state":0,
+        "note":""
+    },
+    "social_close_minor":{
+        "source":"osu!lazer - wave-pop-out",
+        "state":0,
+        "note":"Edited"
+    },
+    "social_online":{
+        "source":"osu!lazer - osd-on",
+        "state":1,
+        "note":""
+    },
+    "social_offline":{
+        "source":"osu!lazer - osd-off",
+        "state":1,
+        "note":""
+    },
+    "hold":{
+        "source":"osu!lazer - key-press-1",
+        "state":0,
+        "note":""
+    },
+    "clearline":{
+        "source":"Pixabay - Glass Shatter + Div. Kicks and Snares",
+        "state":0,
+        "note":"Heavily edited"
     }
 }
